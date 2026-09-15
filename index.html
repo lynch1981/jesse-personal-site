@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3e9">
+  <title>Player One · A little about me</title>
+  <style>
+    :root{--paper:#f6f3e9;--ink:#243d31;--green:#32634b;--yellow:#f6ce59;--line:#d9ddce}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Verdana,Arial,sans-serif;font-size:15px}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #b56836;outline-offset:5px}header,main,footer{max-width:1120px;margin:auto;padding-left:36px;padding-right:36px}header{height:94px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:18px;font-weight:900;letter-spacing:-1px;text-decoration:none;display:flex;gap:11px;align-items:center}.brand-icon{background:var(--green);color:var(--paper);padding:7px 9px;font-size:18px}.nav{display:flex;gap:27px;align-items:center;font-size:12px}.nav a{text-decoration:none}.status{display:flex;align-items:center;gap:7px}.dot{width:7px;height:7px;background:#6f9752;border-radius:50%}.hero{display:grid;grid-template-columns:1.08fr 1fr;gap:40px;align-items:center;padding:66px 0 57px}.eyebrow,.tiny{font-family:monospace;text-transform:uppercase;font-size:11px;letter-spacing:1.5px;font-weight:bold}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #c9d2be;border-radius:4px;padding:8px 10px;background:#e9edde}h1{font-size:clamp(48px,6.4vw,76px);line-height:1.06;letter-spacing:-4px;margin:22px 0}h1 span{color:#6b8653}.intro{line-height:1.8;max-width:390px;color:#667164;font-size:14px}.actions{display:flex;align-items:center;gap:22px;margin-top:27px}.primary{display:inline-block;background:var(--green);color:white;border:0;border-radius:5px;padding:15px 19px;font-size:12px;font-weight:bold;text-decoration:none;box-shadow:0 3px 0 #203e31}.aside-note{font-family:monospace;font-size:11px;color:#74806c;margin-top:20px}.scene-wrap{position:relative;padding-bottom:18px}.scene{overflow:hidden;background:#cee1dc;border:2px solid var(--ink);border-radius:12px;box-shadow:7px 7px 0 #dce0cf}.scene-top{display:flex;justify-content:space-between;padding:13px 16px;border-bottom:2px solid var(--ink);background:#edf0e4;font-family:monospace;font-size:10px;font-weight:bold}.hearts{color:#ba624b;letter-spacing:3px}.scene svg{display:block;width:100%;height:auto;image-rendering:pixelated}.scene-bottom{padding:13px 16px;background:#edf0e4;font-family:monospace;font-size:10px;display:flex;justify-content:space-between;border-top:2px solid var(--ink)}.sticker{position:absolute;bottom:0;right:-12px;transform:rotate(-5deg);background:var(--yellow);border:2px solid var(--ink);padding:11px 15px;font-size:11px;font-weight:bold;box-shadow:3px 3px 0 var(--ink)}.stats{display:grid;grid-template-columns:repeat(3,1fr);padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);gap:20px}.stat{display:flex;gap:15px;align-items:center;justify-content:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat-icon{font-size:23px}.stat strong{display:block;font-size:13px;margin-bottom:5px}.stat small{font-size:11px;color:#77806f}.section-head{display:flex;align-items:end;justify-content:space-between;margin:43px 0 21px}h2{margin:8px 0 0;font-size:26px;letter-spacing:-1px}.section-head>span{color:#77806f;font-family:monospace;font-size:11px}.games{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.game{padding:25px;border:1px solid #d1d7c6;border-radius:9px;transition:transform .2s}.game:hover{transform:translateY(-4px)}.game:nth-child(1){background:#e8edde}.game:nth-child(2){background:#e4ebe7}.game:nth-child(3){background:#f2e7d5}.game-top{display:flex;align-items:center;justify-content:space-between}.game-icon{font-size:30px}.tag{font-family:monospace;font-size:9px;letter-spacing:1px;border:1px solid #a9b99e;padding:5px 7px;border-radius:3px}.game h3{font-size:18px;margin:22px 0 11px;letter-spacing:-.5px}.game p{font-size:12px;line-height:1.85;color:#61715e;margin:0;min-height:67px}.game .quest{margin-top:19px;padding-top:15px;border-top:1px dashed #b9c4ac;font-family:monospace;font-size:10px;color:#4b644b}.bonus{display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #d6cfaf;background:#f5eed7;border-radius:8px;padding:25px 28px;margin:27px 0 39px}.bonus-copy{display:flex;gap:19px;align-items:center}.question-block{flex-shrink:0;background:var(--yellow);font-family:monospace;font-size:27px;font-weight:bold;width:45px;height:45px;text-align:center;line-height:41px;border:2px solid var(--ink);box-shadow:3px 3px 0 #c5a442}.bonus h3{margin:0 0 7px;font-size:14px}.bonus p{margin:0;font-size:12px;color:#73745e;line-height:1.6}.bonus button{flex-shrink:0;background:transparent;border:1px solid #788265;padding:12px 17px;border-radius:4px;font-size:11px;font-weight:bold}footer{border-top:1px solid var(--line);display:flex;justify-content:space-between;padding-top:23px;padding-bottom:27px;font-family:monospace;font-size:10px;color:#7b8372}.coin{position:fixed;pointer-events:none;z-index:10;color:#d59c20;font-size:24px;animation:pop .85s ease-out forwards}@keyframes pop{from{transform:translateY(0) rotate(0);opacity:1}to{transform:translateY(-110px) rotate(40deg);opacity:0}}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.game{transition:none}.coin{animation:none;display:none}}@media(max-width:720px){header,main,footer{padding-left:22px;padding-right:22px}header{height:77px}.nav{gap:16px}.status{display:none}.hero{grid-template-columns:1fr;gap:34px;padding-top:37px;padding-bottom:33px}h1{font-size:59px}.intro{max-width:100%}.scene-wrap{max-width:460px;width:100%;justify-self:center}.sticker{right:0}.stats{gap:9px}.stat{gap:8px;flex-direction:column;text-align:center}.stat strong{font-size:11px}.stat small{font-size:10px}.games{grid-template-columns:1fr}.game p{min-height:0}.section-head>span{display:none}.bonus{align-items:start;flex-direction:column;padding:22px}.bonus button{margin-left:64px}footer{gap:15px;line-height:1.6}.actions{gap:15px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#" aria-label="Player One home"><span class="brand-icon" aria-hidden="true">✚</span> player one.</a>
+    <nav class="nav" aria-label="Main navigation"><a href="#about">About me</a><a href="#games">My games</a><span class="status"><span class="dot"></span> Ready to play</span></nav>
+  </header>
+  <main>
+    <section class="hero" id="about">
+      <div>
+        <div class="eyebrow"><span aria-hidden="true">✦</span> A new player has joined!</div>
+        <h1>Small human.<br>Big <span>adventures.</span></h1>
+        <p class="intro">Hey! I’m a Grade 5 boy from Vancouver who loves video games and a good laugh. Welcome to my little corner of the internet!</p>
+        <p class="intro">My special skill? Turning “five more minutes” into a whole new adventure. 🎮</p>
+        <div class="actions"><a class="primary" href="https://game.jesselab.io">Play my first game <span aria-hidden="true">↗</span></a><span class="tiny">Let’s-a go!</span></div>
+        <div class="aside-note"><a href="#games">↓ Explore my favourite games</a></div>
+      </div>
+      <div class="scene-wrap">
+        <div class="scene">
+          <div class="scene-top"><span>WORLD 01 / MY HAPPY PLACE</span><span class="hearts" aria-label="Three hearts">♥♥♥</span></div>
+          <svg viewBox="0 0 440 300" role="img" aria-labelledby="scene-title" shape-rendering="crispEdges">
+            <title id="scene-title">A pixel adventurer with a sword explores a green block world with mountains, trees, and a golden treasure.</title>
+            <rect width="440" height="300" fill="#c5ddd7"/>
+            <path d="M0 198V180H25V155H50V135H75V110H100V135H125V160H155V185H180V210ZM234 210V170H258V142H282V116H308V90H334V119H360V145H390V174H416V195H440V220Z" fill="#a0bfb1"/>
+            <path d="M54 135H75V110H100V135H111V146H91V135H78V146H65V135ZM288 116H308V90H334V119H344V130H323V117H313V130H300V116Z" fill="#edf0df"/>
+            <path d="M30 51H46V39H76V48H94V62H30ZM257 44H276V30H307V39H328V52H257ZM153 86H169V76H193V83H209V96H153Z" fill="#f7f6e8"/>
+            <rect x="367" y="34" width="30" height="30" fill="#f4d579"/>
+            <path d="M0 234V220H49V208H111V219H168V209H240V221H292V204H359V216H440V300H0Z" fill="#729665"/>
+            <path d="M0 253H440V300H0Z" fill="#91765a"/><path d="M0 240H440V253H0Z" fill="#52764a"/>
+            <path d="M17 265H30V273H17ZM66 282H77V290H66ZM110 260H125V267H110ZM152 282H165V289H152ZM207 265H218V273H207ZM253 286H270V294H253ZM306 260H319V268H306ZM367 280H381V288H367ZM409 262H425V269H409Z" fill="#745e4d"/>
+            <rect x="62" y="154" width="16" height="83" fill="#755941"/><path d="M29 128H47V108H91V127H109V171H91V185H47V169H29Z" fill="#3d674b"/><path d="M46 125H62V116H87V136H98V153H78V165H43V146H46Z" fill="#527f52"/>
+            <rect x="355" y="174" width="12" height="63" fill="#755941"/><path d="M326 146H342V126H380V145H393V180H376V193H340V178H326Z" fill="#3d674b"/><path d="M340 145H354V135H371V151H381V171H353V179H340Z" fill="#527f52"/>
+            <ellipse cx="223" cy="239" rx="35" ry="5" fill="#406943"/>
+            <path d="M200 180V168H229V174H239V184H208V190H197V180Z" fill="#365d43"/>
+            <path d="M207 183H232V204H208Z" fill="#e5b788"/><path d="M207 183H214V193H207ZM228 189H232V195H228Z" fill="#354737"/>
+            <path d="M207 204H233V223H204V214H196V205Z" fill="#d4a146"/><path d="M205 221H216V237H203V232H205ZM223 221H233V237H221V232H223Z" fill="#344f3e"/>
+            <rect x="233" y="204" width="9" height="10" fill="#e5b788"/><path d="M246 199V172H251V167H256V199Z" fill="#f5f3d9"/><path d="M246 199H256V176H251V199Z" fill="#9ab3ad"/><rect x="241" y="199" width="20" height="5" fill="#d5aa44"/><rect x="248" y="204" width="6" height="13" fill="#765d40"/>
+            <rect x="285" y="208" width="29" height="26" fill="#aa763e"/><path d="M285 208H314V217H285ZM285 229H314V234H285Z" fill="#e3bb55"/><rect x="296" y="215" width="7" height="9" fill="#f3d87c"/>
+            <path d="M300 179V193M293 186H307" stroke="#f8edb1" stroke-width="3"/>
+            <path d="M127 239V227M121 230H133M391 238V226M385 229H397" stroke="#3e6a46" stroke-width="3"/><rect x="124" y="220" width="7" height="7" fill="#efd888"/><rect x="388" y="219" width="7" height="7" fill="#e7a486"/>
+          </svg>
+          <div class="scene-bottom"><span>QUEST: HAVE A GREAT TIME</span><span>LVL. 05 ✦</span></div>
+        </div>
+        <div class="sticker">100% adventure energy</div>
+      </div>
+    </section>
+    <div class="stats" aria-label="A few facts about me">
+      <div class="stat"><span class="stat-icon" aria-hidden="true">🎒</span><div><strong>Grade 5</strong><small>Learning. Leveling up.</small></div></div>
+      <div class="stat"><span class="stat-icon" aria-hidden="true">🌲</span><div><strong>Vancouver, Canada</strong><small>Rain outside. Games inside.</small></div></div>
+      <div class="stat"><span class="stat-icon" aria-hidden="true">🎮</span><div><strong>Adventure enthusiast</strong><small>One more level? Always.</small></div></div>
+    </div>
+    <section id="games" aria-labelledby="games-title">
+      <div class="section-head"><div><div class="tiny">My favourite worlds</div><h2>My kind of screen time.</h2></div><span>THREE GAMES. ENDLESS ADVENTURES.</span></div>
+      <div class="games">
+        <article class="game"><div class="game-top"><span class="game-icon" aria-hidden="true">⛏️</span><span class="tag">BUILD & EXPLORE</span></div><h3>Minecraft</h3><p>Big ideas, tiny blocks. I’m here for the building, exploring, and definitely not the creeper behind me.</p><div class="quest">MISSION → Build something awesome.</div></article>
+        <article class="game"><div class="game-top"><span class="game-icon" aria-hidden="true">⚔️</span><span class="tag">ADVENTURE TIME</span></div><h3>The Legend of Zelda</h3><p>Save the kingdom? Absolutely. Get distracted by a mysterious hill on the way? Also absolutely.</p><div class="quest">MISSION → Follow my curiosity.</div></article>
+        <article class="game"><div class="game-top"><span class="game-icon" aria-hidden="true">🍄</span><span class="tag">JUMP INTO FUN</span></div><h3>Super Mario</h3><p>Jump. Grab coins. Miss the platform. Try again. Being a hero takes practice… and a great moustache.</p><div class="quest">MISSION → Make that next jump.</div></article>
+      </div>
+    </section>
+    <section class="bonus" aria-labelledby="bonus-title"><div class="bonus-copy"><span class="question-block" aria-hidden="true">?</span><div><h3 id="bonus-title">You found the bonus block!</h3><p id="joke" role="status" aria-live="polite">There’s a very silly joke inside. You’ve been warned.</p></div></div><button id="joke-button" type="button">Unlock a joke <span aria-hidden="true">↗</span></button></section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Player One · Made of blocks & big ideas.</span><span>Thanks for stopping by. GG! ✦</span></footer>
+  <script>
+    const jokes = [
+      'Why did the creeper cross the road? To blow up the other side!',
+      'Why does Mario love parties? He’s a really fun-gi!',
+      'What does a gamer put on their toast? A little bit of RAM!',
+      'Why did the chicken join Minecraft? To try out a new block of friends!',
+      'My homework is a side quest. Unfortunately, it’s a required one.'
+    ];
+    let jokeIndex = 0;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('joke-button').addEventListener('click', function () {
+      document.getElementById('joke').textContent = jokes[jokeIndex % jokes.length];
+      jokeIndex++;
+      this.innerHTML = 'Another joke <span aria-hidden="true">↗</span>';
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const coin = document.createElement('span');
+        coin.className = 'coin';
+        coin.textContent = '✦';
+        coin.setAttribute('aria-hidden', 'true');
+        const rect = this.getBoundingClientRect();
+        coin.style.left = (rect.left + rect.width / 2) + 'px';
+        coin.style.top = rect.top + 'px';
+        document.body.appendChild(coin);
+        setTimeout(() => coin.remove(), 900);
+      }
+    });
+  </script>
+</body>
+</html>
